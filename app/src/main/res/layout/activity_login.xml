@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="top"
+        android:background="#80ccba"
+        >
+
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:layout_marginLeft="120dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#FFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:background="#aae2f7"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/brokername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:text="Welcome To Cloudy"
+            android:textColor="#03202b"
+            android:visibility="visible" />
+
+
+
+        <LinearLayout
+            android:id="@+id/kotakBanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/kotak_banner"
+
+                android:layout_width="384dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:src="@drawable/cloud3" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="66"
+
+        android:background="#aae2f7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/login"
+
+            android:layout_width="54dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:src="@drawable/login1" />
+
+
+
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="username" />
+
+
+
+
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="password" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LOGIN"
+            android:background="#4994af"/>
+
+        <Button
+
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Create new account"
+            android:background="#4994af"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ivContact"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/fb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FaceBook"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#03202b" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ivCalling"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgRoboPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/twitter" />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="twitter"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#03202b" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ivDialer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgDialer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/instagram" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="instagram"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#03202b" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ivTextShare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:src="@drawable/youtube" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="youtube"
+                android:textColor="#03202b" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
